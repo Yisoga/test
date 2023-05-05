@@ -12,8 +12,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // add Cache-Control HTTP Header to response
   ctx.res.setHeader(
       "Cache-Control",
-      "public, s-maxage=3600, stale-while-revalidate=7200"
+      "public, s-maxage=10, stale-while-revalidate=32"
   );
+
+  console.log('selam')
+
   return {
     props: {
       date: new Date().toISOString(),
