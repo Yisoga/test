@@ -1,6 +1,6 @@
 jobs:
   build:
-    working_directory: ~/test
+    working_directory: ~/cache-test
     docker:
       - image: circleci/node:14
     steps:
