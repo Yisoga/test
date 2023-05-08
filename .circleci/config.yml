@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/test
     docker:
-      - image: circleci/node:16.14
+      - image: circleci/node:17
     steps:
       - checkout
       - restore_cache:
