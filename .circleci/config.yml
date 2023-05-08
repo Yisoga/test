@@ -1,6 +1,6 @@
 jobs:
   build:
-    working_directory: ~/test
+    working_directory: ~/main
     docker:
       - image: circleci/node:14
     steps:
